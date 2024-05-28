@@ -1,0 +1,48 @@
+body {
+height: 100vh;
+background: linear-gradient(to top, darkgrey, grey);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.calculator {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.display {
+    position: relative;
+    width: 360px;
+    height: 120px;
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    top: 60px;
+    left: 17px;
+    right: 17px;
+
+}
+
+.allButtons {
+    position: relative;
+    left: 5px;
+    top: 100px;
+}
+
+button {
+    width: 65px;
+    height: 65px;
+    margin: 5px;
+}
+
+#equal {
+    position: relative;
+    height: 140px;
+    width: 65px;
+    left: 316px;
+    bottom: 150px;
+}
