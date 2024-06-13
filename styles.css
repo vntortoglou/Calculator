@@ -12,14 +12,13 @@ align-items: center;
     top: 10px;
     width: 400px;
     height: 600px;
-    background-color: rgba(100, 100, 100, 1);
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px 10px 10px 10px;
-    background: linear-gradient(black, rgb(255, 255, 255));
+    background: linear-gradient(to bottom right,rgb(200, 200, 200), rgb(180, 180, 180));
 box-shadow: 10px 8px 5px 0px rgba(0, 0, 0, 0.8),
 inset 0px 0px 10px 1px rgba(0, 0, 0, 1),
 4px -2px 3px rgba(0, 0, 0, 0.8);
-background-size: 2px 2px;
+background-size: 4px 4px;
 
             transform: perspective(1000px) rotate(0deg) rotatex(0deg);
 }
@@ -153,15 +152,33 @@ border-radius: 5px 5px 5px 5px;
 
 
 .allButtons {
+position: relative;
+bottom: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thirdLine {
     position: relative;
-    left: 15px;
-    bottom: 40px;
+    right: 40px;
+}
+
+.fourthLine {
+    position: relative;
+    right: 40px;
 }
 
 button {
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 10px;
+
+
     width: 55px;
     height: 45px;
-    margin: 2px;
     border-radius: 10px 10px 40px 40px;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     outline: none;
@@ -169,78 +186,120 @@ button {
 
     color: rgba(255, 255, 255, 0.6);
     font-size: 2rem;
-    margin: 20px 20px 0px 0px;
     font-family: 'Courier', monospace;
 }
+
+
 
 
 .num {
     background : linear-gradient(145deg, black, black);
     border: 4px solid rgba(0, 0, 0, 0.1);
-box-shadow: inset 2px 0px 0px rgba(255,255,255,0.5),
-inset -5px -5px 0px rgba(0,0,0,1),
--6px -6px 10px rgba(255,255,255,0.5),
-4px 4px 5px 4px rgba(0,0,0,0.5),
--6px -6px 10px rgba(0,0,0,0.5),
+box-shadow: inset 2px 1px 1px rgba(255,255,255,0.5),
+inset -3px -1px 1px rgba(0,0,0,1),
+-3px -3px 10px rgba(255,255,255,0.5),
+3px 3px 5px 4px rgba(0,0,0,0.5),
+-3px -3px 10px rgba(0,0,0,0.5),
 -4px -4px 5px 4px rgba(255,255,255,0.5),
-inset 6px 6px 10px rgba(204, 204, 204, 0.5); /* Inner shadow for shine */;;
+inset 6px 6px 10px rgba(204, 204, 204, 0.5); /* Inner shadow for shine */;
 background-size: 2px 2px;      ;
 
 }
 
 .op {
     background : linear-gradient(145deg, rgb(110, 110, 110), rgb(90, 90, 90));
-    border: 4px solid rgba(0, 0, 0, 0.1);
-box-shadow: inset 2px 0px 0px rgba(255,255,255,0.5),
-inset -5px -5px 0px rgba(0,0,0,1),
--6px -6px 10px rgba(255,255,255,0.5),
-4px 4px 5px 4px rgba(0,0,0,0.5),
--6px -6px 10px rgba(0,0,0,0.5),
+    border: 3px solid rgba(0, 0, 0, 0.5);
+
+    box-shadow: inset 2px 1px 1px rgba(255,255,255,0.5),
+inset -3px -3px 1px rgba(0,0,0,1),
+-3px -3px 10px rgba(255,255,255,0.5),
+3px 3px 5px 4px rgba(0,0,0,0.5),
+-3px -3px 10px rgba(0,0,0,0.5),
 -4px -4px 5px 4px rgba(255,255,255,0.5),
 inset 6px 6px 10px rgba(204, 204, 204, 0.5); /* Inner shadow for shine */;;
+
 background-size: 2px 2px;      ;
 
 }
 
 .misc {
-    background : linear-gradient(145deg, rgb(100, 25, 60), rgb(120, 45, 80));
-    border: 1px solid rgba(0, 0, 0, 0.1);
-box-shadow: inset 2px 0px 0px rgba(255,255,255,0.5),
-inset -5px -5px 0px rgba(0,0,0,1),
--6px -6px 10px rgba(255,255,255, 0.5),
-4px 4px 5px 4px rgba(0,0,0, 0.5),
--6px -6px 10px rgba(0,0,0, 0.5),
+    background : linear-gradient(145deg, rgb(150, 50, 120), rgb(130, 30, 100));
+    border: 2px solid rgba(0, 0, 0, 0.4);
+box-shadow: inset 2px 1px 1px rgba(255,255,255,0.5),
+inset -3px -1px 1px rgba(0,0,0,1),
+-3px -3px 10px rgba(255,255,255, 0.4),
+3px 3px 5px 4px rgba(0,0,0, 0.5),
+-3px -3px 10px rgba(0,0,0, 0.5),
 -4px -4px 5px 4px rgba(255,255,255,0.5),
-inset 6px 6px 10px rgba(204, 204, 204, 0.5); /* Inner shadow for shine */;;
+inset 3px 3px 10px rgba(204, 204, 204, 0.5); /* Inner shadow for shine */;;
+
 background-size: 2px 2px;      ;
 
 }
 
 #equal {
-    background : linear-gradient(145deg, rgb(155, 135, 100), rgb(100, 80, 50));
-    border: 1px solid rgba(0, 0, 0, 0.1);
-box-shadow: inset 2px 0px 0px rgba(255,255,255,0.5),
-inset -5px -5px 0px rgba(0,0,0,1),
--6px -6px 10px rgba(255,255,255,0.5),
+    background : linear-gradient(145deg, rgb(200, 150, 50), rgb(180, 130, 30));
+    border: 3px solid rgba(0, 0, 0, 0.5);
+box-shadow: inset 2px 1px 15px rgba(255,255,255,0.5),
+inset -3px -1px 1px rgba(0,0,0,1),
+-6px -6px 10px rgba(255,255,255,0.2),
 4px 4px 5px 4px rgba(0,0,0,0.5),
 -6px -6px 10px rgba(0,0,0,0.5),
 -4px -4px 5px 4px rgba(255,255,255,0.5),
-inset 6px 6px 10px rgba(204, 204, 204, 0.5); /* Inner shadow for shine */;;
-background-size: 2px 2px;      ;
+inset 6px 6px 10px rgba(204, 204, 204, 0.1); /* Inner shadow for shine */;;
+background-size: 2px 2px;
 
+position: absolute;
+bottom: 0px;
+right: 5px;
+height: 110px;
+width: 55px;
+font-size: 3rem;
 
-    position: relative;
-    height: 110px;
-    width: 55px;
-    left: 318px;
-    bottom: 130px;
 }
+
+
 
 #del-text {
     position: relative;
     bottom: 7px;
     right: 2px;
     font-size: 1.4rem;
+}
+
+
+button:active {
+
+    border: 4px solid rgba(0, 0, 0, 0,1);
+box-shadow: inset -2px 0px 0px rgba(0, 0, 0, 0.5),
+inset 3px 3px 5px rgba(0,0,0,1),
+-6px -6px 10px rgba(255,255,255,0.5),
+4px 4px 5px 4px rgba(0,0,0,0.5),
+-6px -6px 10px rgba(0,0,0,0.5),
+-4px -4px 5px 4px rgba(255,255,255,0.5),
+inset -3px -3px 10px rgba(204, 204, 204, 0.5); /* Inner shadow for shine */;
+}
+
+button:active span {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+button#del:active #del-text {
+    font-size: 1.2rem;
+}
+
+button#equal:active {
+    border: 4px solid rgba(0, 0, 0, 0,1);
+box-shadow: inset -2px 0px 0px rgba(0, 0, 0, 0.2),
+inset 3px 3px 5px rgba(0,0,0,1),
+-6px -6px 10px rgba(255,255,255,0.5),
+4px 4px 5px 4px rgba(0,0,0,0.5),
+-6px -6px 10px rgba(0,0,0,0.5),
+-4px -4px 5px 4px rgba(255,255,255,0.5),
+inset -3px -3px 10px rgba(204, 204, 204, 0.5); /* Inner shadow for shine */;
+font-size: 2.5rem;
+color: rgba(255, 255, 255, 0.5);
 }
 
 .kevlar {
