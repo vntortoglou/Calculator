@@ -10,13 +10,12 @@ const btn7 = document.getElementById('btn7');
 const btn8 = document.getElementById('btn8');
 const btn9 = document.getElementById('btn9');
 
+const btnAdd = document.getElementById('btnAdd');
+const btnSub = document.getElementById('btnSub');
+const btnMul = document.getElementById('btnMul');
+const btnDiv = document.getElementById('btnDiv');
 
-
-
-btn1.addEventListener('click', function(){
-    console.log("Button1")
-});
-
-btn2.addEventListener('click', function(){
-    console.log("Button2")
-});
+const btnDot = document.getElementById('btnDot');
+const btnClear = document.getElementById('btnClear');
+const del = document.getElementById('del');
+const equal = document.getElementById('equal');
