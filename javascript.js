@@ -157,10 +157,12 @@ equal.addEventListener('click', () => {
 
 
 
-function formatResult(result) {
-  let formattedResult = result.toString().replace(/(?:\.0+|(\.0+)?0+)$/, '$1');
-  if (formattedResult.length > 12) { 
-    formattedResult = formattedResult.substring(0, 12); 
-  }
-  return formattedResult;
+
+
+function formatResult(result) {  
+  let formattedResult = result.toString();  
+  if (formattedResult.length > 12) {  
+   formattedResult = formattedResult.substring(0, 12);  
+  }  
+  return formattedResult;  
 }
